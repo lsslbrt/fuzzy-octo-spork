@@ -1,22 +1,11 @@
 /* RESPONSIVE ***********************************/
 
 @media (min-width: 768px) {
-  #about {
-    margin-top: 125px;
+  
   }
-  .marginright {
-    padding-left: 75px;
-  }
-}
-
 
 @media (max-width: 767px) {
-  #footer {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  
 }
 
 /* TYPOGRAPHY ***********************************/
@@ -48,12 +37,6 @@ p.small {
   font-size: 16px;
 }
 
-p.vsmall {
-  color: rgba(255,255,255,0.6);
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-}
-
 a:link {
   color: rgba(255,255,255,0.9);
   text-decoration: none;
@@ -79,72 +62,23 @@ a:hover {
 
 /* BASE STYLES ***********************************/
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
 body {
-  background-color: #3d72b4;
-  background-image: linear-gradient(to right, #3d72b4, #525252);
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
- 
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
- 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  background-color: #ffffff;
 }
 
 
-/* ABOUT ***********************************/
+/* HOME ***********************************/
 
-#about {
-  max-width: 750px;
+panel {
+  width: 100%;
+  padding: 0 0%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #373B44;
+  height: 100vh;
 }
 
-h1.title {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-}
-
-p.dribbble {
-  margin-top: 25px;
-}
-
-a.dribbble:hover {
-  color: #1da1f2;
-}
-
-.separator {
-  margin: 50px 0;
-  height: 1px;
-  width: 30px; 
-  background: #1da1f2;
-}
-
-/* CURRENTLY ***********************************/
-
-#currently {
-  margin-top: 50px;
-  max-width: 750px;
-}
-
-h2.status {
-  margin: 25px 0 5px 0;
-}
-
-p.linkedin {
-  color: rgba(255,255,255,0.6);
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  margin-top: 25px;
-}
 
 
 /* FOOTER ***********************************/
@@ -152,16 +86,4 @@ p.linkedin {
 html,
 body {
   height: 100%;
-}
-
-#push,
-#footer {
-  height: 30px;
-}
-
-#wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -30px;
 }
