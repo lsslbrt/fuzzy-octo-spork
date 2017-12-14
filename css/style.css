@@ -114,6 +114,27 @@
   .wellthyarticleheader {
     padding: 96px 0 40px 0 !important;
   }
+  
+  .card-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    padding: 96px 40px 0 40px;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    border: none;
+    background: none;
+    max-width: 100%;
+    min-width: 300px;
+    padding: 0 0 32px 0;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0;
+  }
 }
 
 /* MEDIUM */
@@ -187,6 +208,27 @@
   
   p.small {
     padding: 0 !important;
+  }
+  
+  .card-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    padding: 128px 64px 0 64px;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: flex;
+    border: none;
+    background: none;
+    max-width: 33%;
+    min-width: 332px;
+    padding: 0px 16px 32px 16px;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0;
   }
 }
 	
@@ -267,25 +309,6 @@ body {
 .featuremaxwidth {
   max-width: 480px;
 }
-
-/*.feature {
-  flex-direction: column;
-}
-
-.feature .cardimg {
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.feature .cardimg img {
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 100% 
-}
-*/
 
 .heading-links {
   position: relative; 
@@ -391,6 +414,33 @@ a.featuredlink:hover {
   background-color: #F2EEEB;
   text-align: center;
   padding: 64px 0px;
+}
+
+/* STORIES ***********************************/
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  font-family: "sofia-pro",sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #525151;
+}
+
+.cardimg {
+  max-height: 400px;
+  display: flex;
+}
+
+.cardimg img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.cardtext{
+  margin-top: 8px;
 }
 
 
