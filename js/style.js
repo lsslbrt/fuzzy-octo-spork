@@ -15,7 +15,7 @@ $(document).ready(function () {
 			$('ul.nav-center').fadeIn(250);
 			$('li.instagram').fadeIn(250);
 			$(".wellthyarticleheader").css("color", "#525151");
-			$("p.articletitleappear").css("margin-top", "1rem");
+			$("p.articletitleappear").css("margin-top", "2rem");
 		}
   })
 })

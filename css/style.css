@@ -309,14 +309,15 @@ p.articletitleappear {
   color: #525151;
   font-weight: 700;
   font-size: 1rem;
+  line-height: 1.75rem;
   position: absolute;
   margin-left: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 0;
   z-index: 5;
   transition-property: margin-top;
-  transition-duration: 500ms;
-  transition-delay: 100ms;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
 }
 
 ul.nav-center {
@@ -356,7 +357,6 @@ ul.nav-right a{
   letter-spacing: 1px;
   color: #525151;
   margin-right: 2rem;
-  margin-top: 0.45rem;
   text-decoration: none;
 }
 
@@ -473,12 +473,6 @@ a.superscript:hover {
   margin: 0 auto;
 }
 
-a.homelinkfooter {
-  height: 28px;
-  width: 108px;
-  align-self: center;
-}
-
 p.small {
   font-family: "sofia-pro",sans-serif;
   font-size: 0.75rem;
@@ -491,7 +485,6 @@ p.small {
 }
 
 a.instafooterlink {
-  margin-top: 16px;
   align-self: center;
   height: 28px;
   width: 28px;
