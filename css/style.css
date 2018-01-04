@@ -59,15 +59,10 @@
     display: flex;
     justify-content: center;
   }
-	
-  p.articletitleappear {
-    display: none;
-  }
-	
  
   h1.arthedhome {
     font-family: "sofia-pro",sans-serif;
-    color: #525151;
+    color: #4745D1;
     font-weight: 700;
     font-size: 2.5rem;
     margin: 0 auto;
@@ -79,15 +74,13 @@
     font-family: "sofia-pro",sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
-    margin: 0 auto;
+    margin: 24px 0;
     max-width: 640px;
-    text-align: center;
-    padding: 0 24px;
   }
 	
   h2.artsubhed {
     font-family: "mrs-eaves-xl-serif-narrow",serif;
-    color: #525151;
+    color: #4745D1;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.75rem;
@@ -102,9 +95,7 @@
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.75rem;
-    margin: 0 auto;
-    padding: 24px; 
-    text-align: center;
+		margin: 24px 0px;
   }
 
   h3.artsubheduppercase {
@@ -112,25 +103,28 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.75rem;
-    padding: 0 0 0 24px;
-    margin: 0 0 16px 0;
+    font-size: 0.825rem;
+    margin: 0 0 8px 0;
   }
   
   .articlebody {
     padding: 24px !important;
   }
   
-  .wellthyarticleheader {
-    padding: 96px 0 24px 0 !important;
+  .wellthyarticleheader {  
+		text-align: left !important;
   }
+	
+	.wellthyarticleheadertext {
+		padding: 64px 24px 24px 24px !important;
+	}
   
   .card-grid {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1440px;
-    padding: 96px 40px 0 40px;
+    padding: 96px 24px 0 24px;
     margin: 0 auto;
   }
 
@@ -140,7 +134,7 @@
     background: none;
     max-width: 100%;
     min-width: 300px;
-    padding: 0 0 32px 0;
+    margin: 0 0 32px 0;
     flex-direction: column;
     overflow: hidden;
     border-radius: 0;
@@ -152,8 +146,16 @@
   
   ul.nav-center {
     text-align: left !important;
-    margin-left: 32px !important;
+    margin-left: 24px !important;
   }
+	
+	ul.nav-center a {
+		font-size: 1.25rem !important;
+	}
+	
+	ul.nav-right a {
+		margin-right: 24px !important; 
+	}
 }
 
 /* MEDIUM */
@@ -181,7 +183,7 @@
   
   h1.arthedhome {
     font-family: "sofia-pro",sans-serif;
-    color: #525151;
+    color: #4745D1;
     font-weight: 700;
     font-size: 3.75rem;
     line-height: 4rem;
@@ -193,12 +195,13 @@
     font-weight: 700;
     font-size: 3.75rem;
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 800px;
+		padding: 0px 80px;
   }
   
   h2.artsubhed {
     font-family: "mrs-eaves-xl-serif-narrow",serif;
-    color: #525151;
+    color: #4745D1;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2rem;
@@ -212,17 +215,17 @@
     font-weight: 400;
     line-height: 2rem;
     margin: 0 auto;
-    padding: 32px 0px; 
-    max-width: 640px;
+    padding: 32px 80px; 
+    max-width: 800px;
   }
 	
   h3.artsubheduppercase {
     font-family: "sofia-pro",sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.75rem;
+    font-size: 0.825rem;
     padding: 0;
-    margin: 0 0 16px 0;
+    margin: 0 0 8px 0;
   }
   
   p.small {
@@ -234,7 +237,7 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1440px;
-    padding: 128px 64px 0 64px;
+    padding: 96px 64px 0 64px;
     margin: 0 auto;
   }
 
@@ -244,7 +247,7 @@
     background: none;
     max-width: 33%;
     min-width: 332px;
-    padding: 0px 16px 32px 16px;
+    margin: 0px 16px 32px 16px;
     flex-direction: column;
     overflow: hidden;
     border-radius: 0;
@@ -253,15 +256,6 @@
 	
 /* TYPOGRAPHY ***********************************/
 
-h1.arthedhome a {
-  color: #525151;
-  text-decoration: none;
-}
-
-h1.arthedhome a:hover {
-  color: #4745D1;
-  text-decoration: none;
-}
 
 p {
   font-family: "mrs-eaves-xl-serif-narrow",serif;
@@ -269,7 +263,7 @@ p {
   font-weight: 400;
   line-height: 2rem;
   color: #525151;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 ::selection {
@@ -326,7 +320,7 @@ ul.nav-left img {
 
 p.articletitleappear {
   font-family: "sofia-pro",sans-serif;
-  color: #525151;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.75rem;
@@ -353,7 +347,7 @@ ul.nav-center a{
   font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.75rem;
-  color: #525151;
+  color: #FFFFFF;
   margin-bottom: 0;
   text-decoration: none;
 }
@@ -375,47 +369,67 @@ ul.nav-right a{
   text-transform: uppercase;
   font-size: 0.75rem;
   letter-spacing: 1px;
-  color: #525151;
-  margin-right: 2rem;
+  color: #FFFFFF;
+  margin-right: 32px;
   text-decoration: none;
 }
 
 ul.nav-right a:hover{
-  color: #4745D1;
-  text-decoration: none;
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
 }
 
 /* HOME ***********************************/
 
 
 .panel-b {
-  background-color: #F2EEEB;
+  background-color: #B5CAEE;
 }
 
 .featuremaxwidth {
   max-width: 480px;
 }
 
-a.featuredlink {
-  color: #525151;
-  text-decoration: none;
-}
-
-a.featuredlink:hover {
-  color: #525151;
-  text-decoration: none;
+.featuremaxwidth a:hover {
+	text-decoration: none;
 }
 
 /* ARTICLE ***********************************/
 
 .wellthyarticleheader {
-  padding: 128px 0 80px 0;
+	text-align: center;
   width: 100%;
-  background-color: #F2EEEB;
-  text-align: center;
+	height: 500px;
+  background-color: #4745D1;
   z-index: 1;
-  color: #525151;
-  transition: color 250ms ease;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	overflow: hidden;
+}
+
+.articleimageoverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.wellthyarticleheader img {
+	object-fit: cover;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.wellthyarticleheadertext {
+  position: absolute;
+	width: 100%;
+	z-index: 2;
+  padding: 96px 0 0 0;
+	color: #FFFFFF;
+  transition: opacity 250ms ease;
 }
 
 .articlebody {
@@ -444,21 +458,49 @@ a.superscript {
 
 /*.mailsignup {
   width: 100%;
-  background-color: #F2EEEB;
+  background-color: #B5CAEE;
   text-align: center;
   padding: 64px 0px;
 }*/
 
 a.sharelink {
-  margin-right: 8px;
+  margin-right: 16px;
+}
+
+a.sharelink.nomargin {
+  margin-right: 0;
 }
 
 a.sharelink img {
-  width: 28px;
-  height: 28px;
+  height: 16px;
+	object-fit: contain;
+	min-width: inherit;
 }
 
 /* STORIES ***********************************/
+
+a.navlinkdark {
+	color: #4745D1 !important;
+}
+
+a.navlinkdark:hover {
+	border-bottom: 2px solid #4745D1 !important;
+}
+
+a.logodark {
+	color: #4745D1 !important;
+}
+
+p.cardcategory {
+	font-family: "sofia-pro",sans-serif;
+  font-size: 0.825rem;
+  font-weight: 400;
+	line-height: 0.825rem;
+  color: #FFFFFF;
+  max-width: 380px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
 
 .card-link {
   display: flex;
@@ -466,17 +508,18 @@ a.sharelink img {
   font-family: "sofia-pro",sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 1.5rem;
-  color: #525151;
+  line-height: 2rem;
+  color: #FFFFFF;
 }
 
 .card-link:hover {
-  color: #525151;
+  color: #FFFFFF;
 }
 
 .cardimg {
   max-height: 400px;
   display: flex;
+	overflow: hidden;
 }
 
 .cardimg img {
@@ -485,7 +528,25 @@ a.sharelink img {
   min-height: 100%;
 }
 
+.cardoverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
 .cardtext{
+	position: absolute;
+	padding: 24px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 
