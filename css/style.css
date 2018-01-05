@@ -40,7 +40,7 @@
 @media (max-width: 767px) {
   .panel {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     position: relative;
     overflow: hidden;
     float: left;
@@ -54,7 +54,7 @@
   }
   
   .panel-b {
-    height: 50vh;
+    height: 60vh;
     padding: 32px;
     display: flex;
     justify-content: center;
@@ -62,7 +62,6 @@
  
   h1.arthedhome {
     font-family: "sofia-pro",sans-serif;
-    color: #4745D1;
     font-weight: 700;
     font-size: 2.5rem;
     margin: 0 auto;
@@ -80,7 +79,6 @@
 	
   h2.artsubhed {
     font-family: "mrs-eaves-xl-serif-narrow",serif;
-    color: #4745D1;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.75rem;
@@ -172,7 +170,7 @@
   }
   
   .panel-b {
-    padding: 0 80px 0 80px;
+    padding: 48px 80px 0 80px;
   }
   
   .panel img {
@@ -183,7 +181,6 @@
   
   h1.arthedhome {
     font-family: "sofia-pro",sans-serif;
-    color: #4745D1;
     font-weight: 700;
     font-size: 3.75rem;
     line-height: 4rem;
@@ -201,7 +198,6 @@
   
   h2.artsubhed {
     font-family: "mrs-eaves-xl-serif-narrow",serif;
-    color: #4745D1;
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2rem;
@@ -383,14 +379,18 @@ ul.nav-right a:hover{
 
 
 .panel-b {
-  background-color: #B5CAEE;
+  background-color: #91C9FF;
 }
 
 .featuremaxwidth {
   max-width: 480px;
 }
 
-.featuremaxwidth a:hover {
+a.colored {
+	color: #005CB3;
+}
+
+a.colored:hover {
 	text-decoration: none;
 }
 
@@ -400,7 +400,7 @@ ul.nav-right a:hover{
 	text-align: center;
   width: 100%;
 	height: 500px;
-  background-color: #4745D1;
+  background-color: #972CC1;
   z-index: 1;
 	display: flex;
 	align-items: center;
@@ -410,11 +410,24 @@ ul.nav-right a:hover{
 
 .articleimageoverlay {
 	position: absolute;
+	display: flex;
+	align-items: center;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.25);
+}
+
+.articleimageoverlaynooverlay {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
 }
 
 .wellthyarticleheader img {
@@ -427,7 +440,7 @@ ul.nav-right a:hover{
   position: absolute;
 	width: 100%;
 	z-index: 2;
-  padding: 96px 0 0 0;
+  padding: 48px 0 0 0;
 	color: #FFFFFF;
   transition: opacity 250ms ease;
 }
@@ -438,30 +451,41 @@ ul.nav-right a:hover{
   max-width: 800px;
 }
 
+p.caption {
+	font-family: "sofia-pro",sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #525151;
+  margin: 16px 0;
+  line-height: 1rem;
+  padding: 0;
+}
+
+p.caption a{
+	color: #972CC1;
+}
+
+p.caption a:hover {
+	text-decoration: none;
+}
+
 a.articlelink {
   text-decoration:none;
-  border-bottom: 1px solid #4745D1;
-  box-shadow: inset 0 -2px 0 #4745D1;
+  border-bottom: 1px solid #972CC1;
+  box-shadow: inset 0 -2px 0 #972CC1;
   color: inherit;
   transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
 a.articlelink:hover {
-  background: #4745D1;
+  background: #972CC1;
   color: #FFFFFF;
 }
 
 a.superscript {
-  color: #4745D1;
+  color: #972CC1;
   text-decoration: none;
 }
-
-/*.mailsignup {
-  width: 100%;
-  background-color: #B5CAEE;
-  text-align: center;
-  padding: 64px 0px;
-}*/
 
 a.sharelink {
   margin-right: 16px;
@@ -480,15 +504,15 @@ a.sharelink img {
 /* STORIES ***********************************/
 
 a.navlinkdark {
-	color: #4745D1 !important;
+	color: #972CC1 !important;
 }
 
 a.navlinkdark:hover {
-	border-bottom: 2px solid #4745D1 !important;
+	border-bottom: 2px solid #972CC1 !important;
 }
 
 a.logodark {
-	color: #4745D1 !important;
+	color: #972CC1 !important;
 }
 
 p.cardcategory {
@@ -534,7 +558,16 @@ p.cardcategory {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.25);
+}
+
+.cardoverlaynooverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0);
 }
 
 .cardtext{

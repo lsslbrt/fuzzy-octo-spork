@@ -7,7 +7,7 @@ $(document).ready(function () {
 		
   	if (scroll > 452) {
 			
-			$(".siteheader.stickyheader").css("background-color", "#4745D1");
+			$(".siteheader.stickyheader").css("background-color", "#972CC1");
 			$('ul.nav-center').fadeOut(250);
 			$('li.instagram').fadeOut(100);
 			$("p.articletitleappear").css("margin-top", "0rem");
