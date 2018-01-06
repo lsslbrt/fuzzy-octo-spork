@@ -279,7 +279,7 @@ body {
 
 .siteheader {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   height: 48px;
   width: 100%;
   padding-top: 8px;
@@ -437,11 +437,10 @@ a.colored:hover {
 }
 
 .wellthyarticleheadertext {
-  position: absolute;
-	width: 100%;
-	z-index: 2;
+  width: 100%;
+  z-index: 2;
   padding: 48px 0 0 0;
-	color: #FFFFFF;
+  color: #FFFFFF;
   transition: opacity 250ms ease;
 }
 
@@ -497,8 +496,9 @@ a.sharelink.nomargin {
 
 a.sharelink img {
   height: 16px;
-	object-fit: contain;
-	min-width: inherit;
+  object-fit: contain;
+  min-width: inherit;
+  min-height: initial;
 }
 
 /* STORIES ***********************************/
