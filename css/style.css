@@ -102,7 +102,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.825rem;
-    margin: 0 0 8px 0;
+    margin: 0 0 1rem 0;
   }
   
   .articlebody {
@@ -204,7 +204,7 @@
     font-size: 3.75rem;
     margin: 0 auto;
     max-width: 800px;
-		padding: 0px 80px;
+    padding: 0px 40px;
   }
   
   h2.artsubhed {
@@ -232,7 +232,7 @@
     letter-spacing: 1px;
     font-size: 0.825rem;
     padding: 0;
-    margin: 0 0 8px 0;
+    margin: 0 0 1rem 0;
   }
   
   p.small {
@@ -440,8 +440,15 @@ a.colored:hover {
   max-width: 800px;
 }
 
+p.subheader {
+  font-family: "sofia-pro",sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
 p.caption {
-	font-family: "sofia-pro",sans-serif;
+  font-family: "sofia-pro",sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   color: #525151;
@@ -461,9 +468,9 @@ p.caption a:hover {
 a.articlelink {
   text-decoration:none;
   border-bottom: 1px solid #972CC1;
+  padding: 2px;
   box-shadow: inset 0 -2px 0 #972CC1;
   color: inherit;
-  transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
 a.articlelink:hover {
