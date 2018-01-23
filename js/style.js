@@ -7,14 +7,14 @@ $(document).ready(function () {
 		
   	if (scroll > 452) {
 			
-			$(".siteheader.stickyheader").css("background-color", "#972CC1");
+            $(".stickyheader").addClass('stickycolor')
 			$('ul.nav-center').fadeOut(250);
 			$('li.instagram').fadeOut(100);
 			$("p.articletitleappear").css("margin-top", "0rem");
 			
 	  } else {
 			
-			$(".siteheader.stickyheader").css("background-color", "transparent");
+            $(".stickyheader").removeClass('stickycolor')
 			$('ul.nav-center').fadeIn(250);
 			$('li.instagram').fadeIn(100);
 			$("p.articletitleappear").css("margin-top", "2rem");
