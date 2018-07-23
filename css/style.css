@@ -456,7 +456,7 @@ p.caption {
 
 p.caption a{
   color: #2d2d2d;
-  border-bottom: 1px solid #2d2d2d;
+  border-bottom: 2px solid #2d2d2d;
 }
 
 p.caption a:hover {
