@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Wellthy | Wellness Without the Snake Oil</title>
+    <title>Wellness Without the Snake Oil — Wellthy</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="tkAF44_gMQEsllG2Lt8CNfuhhA_skebu88HecWiNc_8" />
@@ -14,16 +14,21 @@
     
     <style media="screen" type="text/css">
 
-      a.colored {
+      @media (max-width: 767px) {
+      
+      ul.nav-center a {
         color: #FFFFFF;
       }
       
-      a.colored:hover {
-        text-decoration: none;
+      ul.nav-right a {
+        color: #FFFFFF;
       }
       
-      .panel-b {
-        background-color: #402b79;
+      ul.nav-right a:hover {
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+      }
+        
       }
       
     </style>
@@ -33,9 +38,9 @@
     
     <div class="siteheader">
       <ul class="nav-left flex-grow">
-        <li class="instagram">
+        <li>
           <a href="https://instagram.com/wellthy.blog" target="_blank">
-            <img src="img/instagram-white.png">
+            Instagram
           </a>
         </li>
       </ul>
@@ -45,7 +50,7 @@
           </li>
         </ul>
         <ul class="nav-right flex-grow">
-          <li>
+          <li class="stories">
             <a href="http://wellthy.blog/stories">Stories</a>
           </li>
           <li>
@@ -55,6 +60,7 @@
     </div>
     
     <div class="row no-gutter">
+      
       <div class="col-md-6">
         <a href="http://wellthy.blog/sleep" class="panel flex">  
           <img src="img/articles/sleep.jpg">
@@ -63,19 +69,23 @@
       
       <div class="col-md-6">
         <div class="panel panel-b vertical-align">  
-          <div class="featuremaxwidth">  
-            <a class="colored" href="http://wellthy.blog/sleep">
-              <h1 class="arthedhome">
-                  Beauty Sleep 101
-              </h1>
-              <h2 class="artsubhed">
-                  Melatonin, magnesium, blue light, sunlight? Learn how to determine your ideal sleep schedule — plus, what actually works when it comes to optimizing your shut-eye.
-              </h2>
+          <div class="featuredarticle">    
+            <h1 class="arthedhome">
+              <a href="http://wellthy.blog/sleep">Beauty Sleep 101</a>
+            </h1>
+            <h2 class="artsubhed">
+                Melatonin, magnesium, blue light, sunlight? Discover which wellness trends actually work when it comes to optimizing your beauty sleep - plus, learn how to determine (and stick to) your own perfect individualized sleep schedule.
+            </h2>
+            <a class="featurelink" href="http://wellthy.blog/sleep">
+              Read More
             </a>
           </div>
         </div>
       </div>
+      
+      
     </div>
+
   
   </body>
 </html>
