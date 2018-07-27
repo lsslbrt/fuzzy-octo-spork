@@ -76,14 +76,30 @@
 
 @media (max-width: 767px) {
  
+.feature {
+  flex-direction: column-reverse;
+}
+  
+.coverstory {
+  margin-top: 56px;
+}
+  
+.coverimage {
+  padding: 0px 24px !important;
+}
+  
+p.cardcategorydark {
+  margin-bottom: 16px !important;
+}
+  
 .siteheader {
-  height: 80px !important;
-  padding: 24px !important;
+  height: 56px !important;
+  padding: 0 24px !important;
 }  
   
 .panel {
   width: 100%;
-  height: 40vh;
+  height: 400px;
   position: relative;
   overflow: hidden;
   float: left;
@@ -97,8 +113,8 @@
 }  
   
 .panel-b {
-  height: 60vh;
-  padding: 80px 40px;
+  height: 100%;
+  padding: 40px;
   display: flex;
   justify-content: center;
 }
@@ -110,6 +126,7 @@ h1.arthedhome {
   line-height: 2.25rem;
   color: #FFFFFF;
   text-align: center;
+  margin: 0;
 }
   
 h1.arthed {
@@ -121,12 +138,32 @@ h1.arthed {
 }
 
 h2.artsubhed {
+  display: none;
+}
+  
+a.featurelink {
+  display: none;
+}
+  
+a.featurelinkmob {
+  font-family: "hk-grotesk",sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #262626;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding-bottom: 2px;
+}
+  
+h2.artsubhedmob {
   font-family: "mrs-eaves-xl-serif",serif;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: #262626;
-  margin: 2rem auto;
+  margin: 40px 0px;
 }
 
 h2.artsubhedart {
@@ -152,6 +189,7 @@ h2.artsubhedart {
 	
   .wellthyarticleheader {  
     text-align: left !important;
+    height: 90vh !important;
   }
   
   .card-grid {
@@ -202,6 +240,13 @@ h2.artsubhedart {
 
 @media (min-width: 768px) {
   
+.feature-50 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+  
 .panel {
   width: 100%;
   height: 100vh;
@@ -219,6 +264,10 @@ h2.artsubhedart {
   object-fit: cover;
   min-width: 100%;
   min-height: 100%
+}
+  
+.mobilestuff {
+  display: none !important;
 }
   
 h1.arthedhome {
@@ -283,7 +332,7 @@ p {
   font-weight: 400;
   line-height: 2rem;
   color: #262626;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
 }
 
 ::selection {
@@ -405,6 +454,20 @@ ul.nav-right a:hover{
   border-bottom: 1px solid #262626;
 }
 
+.feature {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-50 {
+  padding: 0;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+}
+
 a.activelink {
 	color: #262626 !important;
     border-bottom: 1px solid #262626 !important;
@@ -445,12 +508,19 @@ a.featurelink:hover {
   border-bottom: 1px solid #262626;
 }
 
+.mobilestuff {
+  display: flex;
+  padding: 0px 40px 40px 40px;
+  text-align: center;
+  flex-direction: column;
+}
+
 /* ARTICLE ***********************************/
 
 .wellthyarticleheader {
   text-align: center;
   width: 100%;
-  height: 540px;
+  height: 60vh;
   background-color: #262626;
   z-index: 1;
   display: flex;
@@ -490,7 +560,7 @@ a.featurelink:hover {
 .wellthyarticleheadertext {
   width: 100%;
   z-index: 2;
-  padding: 0px 40px;
+  padding: 0px 24px;
   color: #FFFFFF;
   transition: opacity 250ms ease;
   margin-top: 112px;
@@ -507,7 +577,7 @@ p.caption {
   font-size: 0.75rem;
   font-weight: 500;
   color: #262626;
-  margin: 0 0 2rem 0;
+  margin: 0 0 40px 0;
   line-height: 0.75rem;
   padding: 0;
 }
@@ -555,22 +625,24 @@ a.superscript {
 
 p.sharetitle {
   font-family: "hk-grotesk",sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
   color: #262626;
-  margin: 0 0.5rem 0 0;
+  margin: 0 16px 0 0;
   padding: 0;
-  line-height: 1rem;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 a.sharelink {
   font-family: "hk-grotesk",sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   color: #262626;
   margin: 0 1rem 0 0;
   padding: 0;
-  line-height: 1rem;
+  line-height: 16px;
 }
 
 a.sharelink:hover {
@@ -586,7 +658,7 @@ a.sharelink:hover {
   flex-direction: column;
   overflow: hidden;
   border-radius: 0;
-  height: 420px;
+  height: 620px;
 }
 
 p.cardcategory {
@@ -603,14 +675,32 @@ p.cardcategory {
   display: inline-block;
 }
 
-.card-link {
-  display: flex;
-  flex-direction: column;
+p.cardcategorydark {
+  font-family: "hk-grotesk",sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  background-color: #262626;
+  padding: 6px 6px 2px 6px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  display: inline-block;
+}
+
+p.cardtitle {
   font-family: "hk-grotesk",sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.25rem;
   color: #FFFFFF;
+  margin: 8px 0 0 0;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-link:hover {
@@ -618,7 +708,7 @@ p.cardcategory {
 }
 
 .cardimg {
-  max-height: 420px;
+  max-height: 620px;
   display: flex;
   overflow: hidden;
 }
