@@ -553,6 +553,8 @@ a.featurelink:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #262626;
+  text-align: center;
 }
 
 .wellthyarticleheader img {
@@ -574,6 +576,13 @@ a.featurelink:hover {
   padding: 5rem;
   margin: 0 auto;
   max-width: 800px;
+}
+
+.articlebody img {
+  width: 100%;
+  margin-bottom: 16px;
+  height: 800px;
+  object-fit: cover;
 }
 
 p.caption {
