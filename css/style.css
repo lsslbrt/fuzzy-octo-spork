@@ -187,7 +187,7 @@ h2.artsubhedart {
     padding: 24px !important;
   }
 	
-  .wellthyarticleheader {  
+  .articleheader {  
     text-align: left !important;
     height: 90vh !important;
   }
@@ -519,7 +519,7 @@ a.featurelink:hover {
 
 /* ARTICLE ***********************************/
 
-.wellthyarticleheader {
+.articleheader {
   text-align: center;
   width: 100%;
   background-color: #262626;
@@ -552,13 +552,13 @@ a.featurelink:hover {
   text-align: center;
 }
 
-.wellthyarticleheader img {
+.articleheader img {
   object-fit: cover;
   min-width: 100%;
   min-height: 100%;
 }
 
-.wellthyarticleheadertext {
+.articleheadertext {
   width: 100%;
   z-index: 2;
   margin: 152px 0 64px 0;
@@ -753,7 +753,7 @@ p.cardtitle {
 
 /* FOOTER ***********************************/
 
-.wellthyfooter {
+.footer {
   text-align: center;
   padding: 40px 0;
   margin: 0 auto;
