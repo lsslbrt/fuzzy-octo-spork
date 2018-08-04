@@ -173,7 +173,7 @@ h2.artsubhedart {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 0.825rem;
+    font-size: 0.875rem;
     margin: 0 0 1rem 0;
   }
   
@@ -212,10 +212,14 @@ h2.artsubhedart {
   ul.nav-center {
     text-align: left !important;
   }
-	
-	ul.nav-center a {
-		font-size: 1.25rem !important;
-	}
+  
+  .newsletter {
+    flex-wrap: wrap;
+  }
+  
+  .footer {
+    flex-wrap: wrap;
+  }
 	
 }
 
@@ -311,7 +315,7 @@ h3.artsubheduppercase {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
-  font-size: 0.825rem;
+  font-size: 0.875rem;
   padding: 0;
   margin: 0;
 }
@@ -321,10 +325,6 @@ h3.artsubheduppercase {
   margin-bottom: 16px;
   height: 800px;
   object-fit: cover;
-}
-
-p.small {
-  padding: 0 !important;
 }
 }
 	
@@ -386,8 +386,6 @@ ul.nav-left {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 1.75rem;
-  height: 1.75rem;
 }
 
 ul.nav-left a{
@@ -417,21 +415,6 @@ ul.nav-center {
   text-align: center;
   padding: 0;
   margin: 0;
-}
-
-ul.nav-center a{
-  font-family: "henriette",sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2rem;
-  color: #262626;
-  margin-bottom: 0;
-  text-decoration: none;
-  letter-spacing: 0.25px;
-}
-
-ul.nav-center a:hover {
-  text-decoration: none;
 }
 
 ul.nav-right {
@@ -477,11 +460,19 @@ a.activelink {
     border-bottom: 1px solid #262626 !important;
 }
 
-li.stories {
+li.articles {
   margin-right: 0;
 }
 
 /* HOME ***********************************/
+
+ul.nav-center img {
+  height: 24px;
+}
+
+li.articles span + span {
+  margin-left: 16px;
+}
 
 .coverimage img {
   object-fit: cover;
@@ -673,7 +664,7 @@ a.sharelink:hover {
   text-decoration: none;
 }
 
-/* STORIES ***********************************/
+/* stories ***********************************/
 
 .cardart {
   position: relative;
@@ -767,30 +758,134 @@ p.cardtitle {
 
 /* FOOTER ***********************************/
 
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 40px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.subscribeheader {
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #262626;
+  margin: 0;
+}
+
+p.subscribesubheader {
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #262626;
+  margin: 0;
+}
+
+.subscribe {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 40px;
+}
+
+.subscribeform {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-left: 40px;
+}
+
+form #mc_embed_signup_scroll {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border: 1px solid #262626;
+  justify-content: space-between;
+}
+
+input {
+  background: none;
+  border: none;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #999999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999999;
+  opacity: 1;
+}
+
+input.required.email {
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: #262626;
+}
+
+input.required.email:focus {
+  outline: none;
+}
+
+form #mc_embed_signup_scroll input.button {
+  background-image: url(http://nectyre.com/img/rightarrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+form #mc_embed_signup_scroll input.button:focus {
+  outline: none;
+}
+
+hr.footer {
+  margin: 0px 40px;
+  padding: 0;
+  border-top: 1px solid #efefef;
+}
+
 .footer {
-  text-align: center;
-  padding: 40px 0;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 p.small {
   font-family: "hk-grotesk",sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #999999;
+  margin: 0;
+  line-height: 1rem;
+}
+
+.socials a {
+  font-family: "hk-grotesk",sans-serif;
+  text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 500;
+  letter-spacing: 2px;
   color: #262626;
-  margin: 1rem 0 0 0;
-  max-width: 380px;
-  line-height: 1rem;
-  padding: 0 2.5rem;
+  text-decoration: none;
+  padding-bottom: 4px;
 }
 
-a.instafooterlink {
-  align-self: center;
-  height: 1.75rem;
-  width: 1.75rem;
+.socials a:hover {
+  border-bottom: 1px solid #262626;
 }
 
-a.instafooterlink img {
-  width: 1.75rem;
-  height: 1.75rem;
+.socials span + span {
+  margin-left: 16px;
 }
