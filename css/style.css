@@ -218,7 +218,36 @@ h2.artsubhedart {
   }
   
   .footer {
-    flex-wrap: wrap;
+    flex-direction: column-reverse !important;
+    padding: 40px 24px !important;
+    text-align: center !important;
+  }
+  
+  .socials {
+    margin-bottom: 16px;
+  }
+  
+  .newsletter {
+    padding: 40px 24px !important;
+  }
+  
+  .subscribe {
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+  
+  p.subscribeheader {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 0;
+  }
+  
+  .subscribeform {
+    padding-left: 0;
+  }
+  
+  hr.sep {
+    margin: 0px 24px !important;
   }
 	
 }
@@ -325,6 +354,35 @@ h3.artsubheduppercase {
   margin-bottom: 16px;
   height: 800px;
   object-fit: cover;
+}
+.newsletter {
+  display: flex;
+  flex-direction: row;
+  padding: 80px 40px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.subscribeheader {
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  color: #262626;
+  margin: 0;
+}
+
+.subscribe {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-right: 40px;
+}
+
+.subscribeform {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding-left: 40px;
 }
 }
 	
@@ -758,45 +816,6 @@ p.cardtitle {
 
 /* FOOTER ***********************************/
 
-.newsletter {
-  display: flex;
-  flex-direction: row;
-  padding: 80px 40px;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-p.subscribeheader {
-  font-family: "hk-grotesk", sans-serif;
-  font-weight: 500;
-  font-size: 1.75rem;
-  line-height: 2rem;
-  color: #262626;
-  margin: 0;
-}
-
-p.subscribesubheader {
-  font-family: "hk-grotesk", sans-serif;
-  font-weight: 500;
-  font-size: 1.75rem;
-  line-height: 2rem;
-  color: #262626;
-  margin: 0;
-}
-
-.subscribe {
-  flex-grow: 1;
-  flex-basis: 50%;
-  padding-right: 40px;
-}
-
-.subscribeform {
-  flex-grow: 1;
-  flex-basis: 50%;
-  padding-left: 40px;
-}
-
 form #mc_embed_signup_scroll {
   display: flex;
   align-items: center;
@@ -847,7 +866,8 @@ form #mc_embed_signup_scroll input.button:focus {
   outline: none;
 }
 
-hr.footer {
+hr.sep {
+  width: 100%;
   margin: 0px 40px;
   padding: 0;
   border-top: 1px solid #efefef;
@@ -859,7 +879,6 @@ hr.footer {
   padding: 40px;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
 }
 
 p.small {
