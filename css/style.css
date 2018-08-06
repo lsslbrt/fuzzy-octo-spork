@@ -154,8 +154,8 @@ ul.nav-center {
   flex: 1;
   justify-content: center;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 ul.nav-center a {
@@ -167,19 +167,13 @@ ul.nav-center img {
   height: 24px;
 }
 
-@media (max-width: 767px) {
-  ul.nav-center {
-    justify-content: flex-start;
-  }
-}
-
 ul.nav-right {
   display: flex;
   flex: 1;
   justify-content: flex-end;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ul.nav-right a{
@@ -213,6 +207,109 @@ ul.nav-right.white a:hover{
 
 ul.nav-right span + span {
   margin-left: 16px;
+}
+
+@media (max-width: 767px) {
+  ul.nav-right {
+    display: none;
+  }
+}
+
+/* NAV - MOBILE ADDITIONS ***********************************/
+
+ul.nav-left-mobile {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav-right-mobile {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+ul.nav-right-mobile img {
+  width: 16px;
+  height: 13px;
+}
+
+@media (min-width: 768px) {
+  ul.nav-left-mobile, ul.nav-right-mobile {
+    display: none;
+  }
+}
+
+.overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #FAFAFA;
+  z-index: 100; 
+}
+
+ul.overlay-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.overlay-list li {
+  margin: 0 0 40px 0;
+}
+
+ul.overlay-list li a {
+  font-family: "hk-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #262626;
+  text-decoration: none;
+}
+
+.mobile-close-nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin: 0;
+  padding: 0 24px;
+}
+
+.overlay-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overlay-close img {
+  height: 13px;
+  width: 12px;
+}
+
+.overlay nav {
+  align-self: center;
+  text-align: center;
+  margin: 80px 0 0 0;
+  padding: 0 24px 24px 24px;
+}
+
+.overlay-data {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay-open {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
 }
 
 /* FOOTER *******************************************************************************************************/
@@ -865,6 +962,7 @@ a.sharelink:hover {
 .card-overlay {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.25);
