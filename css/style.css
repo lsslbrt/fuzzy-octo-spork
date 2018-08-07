@@ -45,7 +45,11 @@ body {
 }
 
 *, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .row {
@@ -234,11 +238,6 @@ ul.nav-right-mobile {
   justify-content: flex-end;
 }
 
-ul.nav-right-mobile img {
-  width: 16px;
-  height: 13px;
-}
-
 @media (min-width: 768px) {
   ul.nav-left-mobile, ul.nav-right-mobile {
     display: none;
@@ -286,11 +285,6 @@ ul.overlay-list li a {
 .overlay-close {
   display: flex;
   justify-content: flex-end;
-}
-
-.overlay-close img {
-  height: 13px;
-  width: 12px;
 }
 
 .overlay nav {
@@ -476,7 +470,7 @@ form #mc_embed_signup_scroll input.button:focus {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .feature-right, .feature-left {
     width: 50%;
   }
@@ -520,11 +514,13 @@ form #mc_embed_signup_scroll input.button:focus {
 .latest-story {
   display: flex;
   flex-direction: column;
+  min-height: 768px;
   height: 100vh;
 }
 
 @media (max-width: 767px) {  
   .latest-story {
+    min-height: inherit;
     height: auto;
   }
 }
@@ -610,10 +606,6 @@ a.latest-story-link {
 
 a.latest-story-link:hover {
   border-bottom: 1px solid #262626;
-}
-
-a.latest-story-link img {
-  vertical-align: baseline;
 }
 
 @media (max-width: 767px) {  
