@@ -84,7 +84,7 @@ h1, h2, h3 {
   color: #FFFFFF;
   background: #262626;
 }
-	
+
 /* NAVIGATION *******************************************************************************************************/
 
 .nav {
@@ -100,7 +100,7 @@ h1, h2, h3 {
   align-items: center;
   position: absolute;
   top: 0;
-} 
+}
 
 @media (max-width: 767px) {
   .nav {
@@ -252,7 +252,7 @@ ul.nav-right-mobile {
   top: 0;
   left: 0;
   background: #FAFAFA;
-  z-index: 100; 
+  z-index: 100;
 }
 
 ul.overlay-list {
@@ -320,7 +320,7 @@ ul.overlay-list li a {
   border-bottom: 1px solid #efefef;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .newsletter {
     flex-wrap: wrap;
     margin: 0 24px;
@@ -339,7 +339,7 @@ ul.overlay-list li a {
   margin: 0 80px 0 0;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .subscribe-copy {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -371,6 +371,13 @@ input.required.email {
   font-size: 1.25rem;
   line-height: 1.25rem;
   color: #262626;
+  width: 390px;
+}
+
+@media (max-width: 767px) {
+  input.required.email {
+    width: 240px;
+  }
 }
 
 input.required.email:focus {
@@ -393,7 +400,6 @@ form #mc_embed_signup_scroll input.button {
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
-  height: 12px;
   cursor: pointer;
   padding: 0;
 }
@@ -410,7 +416,7 @@ form #mc_embed_signup_scroll input.button:focus {
   padding: 40px;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .footer {
     flex-direction: column-reverse;
     text-align: center;
@@ -446,7 +452,7 @@ form #mc_embed_signup_scroll input.button:focus {
   border-bottom: 1px solid #262626;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .socials {
     margin: 0 0 24px 0;
   }
@@ -476,7 +482,7 @@ form #mc_embed_signup_scroll input.button:focus {
   }
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .feature-left {
     padding: 0px 24px;
   }
@@ -485,7 +491,7 @@ form #mc_embed_signup_scroll input.button:focus {
 .feature-left img {
   object-fit: cover;
   min-width: 100%;
-  min-height: 100%  
+  min-height: 100%
 }
 
 .latest-image {
@@ -493,7 +499,7 @@ form #mc_embed_signup_scroll input.button:focus {
   height: 100vh;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .latest-image {
     height: 400px;
   }
@@ -504,7 +510,7 @@ form #mc_embed_signup_scroll input.button:focus {
 }
 
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .feature-right {
     margin-top: 64px;
     padding: 40px 24px;
@@ -518,7 +524,7 @@ form #mc_embed_signup_scroll input.button:focus {
   height: 100vh;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .latest-story {
     min-height: inherit;
     height: auto;
@@ -538,7 +544,7 @@ p.category-tag.dark {
   margin: 0 0 40px 0;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   p.category-tag.dark {
     margin: 0 0 24px 0;
   }
@@ -552,7 +558,7 @@ hr.feature-right-border {
   border-bottom: 1px solid #efefef;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   hr.feature-right-border {
     display: none;
   }
@@ -569,10 +575,10 @@ h1.home-article-header a {
   padding: 0;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   h1.home-article-header a {
     font-size: 2rem;
-    line-height: 2.25rem;    
+    line-height: 2.25rem;
   }
 }
 
@@ -586,7 +592,7 @@ h2.home-article-subheader {
   padding: 0px 40px;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   h2.home-article-subheader {
     display: none;
   }
@@ -608,7 +614,7 @@ a.latest-story-link:hover {
   border-bottom: 1px solid #262626;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   a.latest-story-link {
     display: none;
   }
@@ -621,7 +627,7 @@ a.latest-story-link:hover {
   width: 100%;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .about {
     padding: 40px;
   }
@@ -644,7 +650,7 @@ h3.about-company {
 
 /* HOME - MOBILE VERSION ***********************************/
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
 
 .latest-story-mobile {
   display: flex;
@@ -652,7 +658,7 @@ h3.about-company {
   text-align: center;
   padding: 40px 24px 0px 24px;
 }
-  
+
 h2.home-article-subheader-mobile {
   font-family: "mrs-eaves-xl-serif",serif;
   font-size: 1.25rem;
@@ -706,8 +712,8 @@ hr.feature-right-border-mobile {
   padding: 40px 40px 80px 40px;
 }
 
-@media (max-width: 767px) {  
-  .article-header-content {  
+@media (max-width: 767px) {
+  .article-header-content {
     margin: 64px 0 0 0;
     padding: 40px 24px;
   }
@@ -735,7 +741,7 @@ h1.article-header {
   margin: 0 0 24px 0;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   h1.article-header {
     font-size: 2.5rem;
     line-height: 2.75rem;
@@ -747,10 +753,10 @@ h2.article-subheader {
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 1.625rem;
-  margin: 0 0 24px 0; 
+  margin: 0 0 24px 0;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   h2.article-subheader {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -774,7 +780,7 @@ h3.article-date {
   max-width: 800px;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .article-body {
     padding: 40px 24px !important;
   }
@@ -787,7 +793,7 @@ h3.article-date {
   object-fit: cover;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .article-body img {
     height: 400px;
   }
@@ -836,7 +842,7 @@ a.articlelink {
 }
 
 a.articlelink:hover {
-  color: #262626; 
+  color: #262626;
   text-decoration: none;
 }
 
@@ -845,7 +851,7 @@ a.articlelink:hover {
   flex-direction: row;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .share {
     flex-direction: column;
   }
@@ -855,7 +861,7 @@ a.articlelink:hover {
   margin: 0 0 0 16px;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .share span + span {
     margin: 8px 0 0 0;
   }
@@ -892,7 +898,7 @@ a.sharelink:hover {
 }
 
 /* STORIES INDEX *******************************************************************************************************/
-  
+
 @media (min-width: 1024px) {
   .card-grid {
     display: grid;
@@ -916,8 +922,8 @@ a.sharelink:hover {
     padding: 40px;
   }
 }
- 
-@media (max-width: 767px) {  
+
+@media (max-width: 767px) {
   .card-grid {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -934,7 +940,7 @@ a.sharelink:hover {
   height: 600px;
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
   .story-card {
     height: 400px;
   }
