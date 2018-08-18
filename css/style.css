@@ -811,21 +811,22 @@ p.caption {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
-  color: #262626;
+  color: #999;
   margin: 0 0 40px 0;
   line-height: 0.75rem;
   padding: 0;
+  text-transform: uppercase;
 }
 
 p.caption a{
-  color: #262626;
+  color: #999;
   text-decoration: none;
   padding-bottom: 2px;
 }
 
 p.caption a:hover {
   text-decoration: none;
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid #999;
 }
 
 a.articlelink {
