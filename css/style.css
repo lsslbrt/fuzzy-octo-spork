@@ -65,7 +65,7 @@ body {
 p {
   font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 2rem;
   color: #262626;
   margin: 0 0 40px 0;
@@ -579,7 +579,7 @@ h1.home-article-header a {
 h2.home-article-subheader {
   font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75rem;
   color: #262626;
   margin: 32px 0;
@@ -656,7 +656,7 @@ h3.about-company {
 h2.home-article-subheader-mobile {
   font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75rem;
   color: #262626;
   margin: 0 0 40px 0;
@@ -745,7 +745,7 @@ h1.article-header {
 h2.article-subheader {
   font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.75rem;
   margin: 0 0 24px 0; 
 }
