@@ -36,6 +36,23 @@
       font-style: italic;
     }
 
+@font-face {
+      font-family: Nantes;
+      src: url("../fonts/NantesWeb-Regular.woff2") format('woff2'),
+           url("../fonts/NantesWeb-Regular.woff") format('woff'),
+           url("../fonts/NantesWeb-Regular.eot") format('embedded-opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+@font-face {
+      font-family: Nantes;
+      src: url("../fonts/NantesWeb-Bold.woff2") format('woff2'),
+           url("../fonts/NantesWeb-Bold.woff") format('woff'),
+           url("../fonts/NantesWeb-Bold.eot") format('embedded-opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
 
 /* BASICS *******************************************************************************************************/
 
@@ -63,9 +80,9 @@ body {
 }
 
 p {
-  font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
-  font-size: 1.125rem;
-  font-weight: 300;
+  font-family: "Nantes",serif;
+  font-size: 1.25rem;
+  font-weight: 400;
   line-height: 2rem;
   color: #262626;
   margin: 0 0 40px 0;
@@ -316,8 +333,8 @@ ul.overlay-list li a {
   align-items: center;
   margin: 0 40px;
   padding: 80px 0;
-  border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 @media (max-width: 767px) {
@@ -331,10 +348,10 @@ ul.overlay-list li a {
 .subscribe-copy {
   flex-grow: 1;
   flex-basis: 50%;
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Nantes", serif;
   font-size: 1.75rem;
   font-weight: 500;
-  line-height: 2rem;
+  line-height: 2.25rem;
   color: #262626;
   margin: 0 80px 0 0;
 }
@@ -342,7 +359,7 @@ ul.overlay-list li a {
 @media (max-width: 767px) {
   .subscribe-copy {
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
     margin: 0 0 24px 0;
   }
 }
@@ -350,13 +367,19 @@ ul.overlay-list li a {
 .subscribe-form {
   flex-grow: 1;
   flex-basis: 50%;
+  height: 56px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #262626;
+}
+
+.subscribe-form:hover {
+  border-bottom: 2px solid #262626;
+  transition: bordeer-bottom 200ms ease;
 }
 
 form #mc_embed_signup_scroll {
   display: flex;
   align-items: center;
-  padding: 16px 24px;
-  border: 1px solid #262626;
   justify-content: space-between;
 }
 
@@ -366,17 +389,18 @@ input {
 }
 
 input.required.email {
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Nantes", serif;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.25rem;
   color: #262626;
-  width: 390px;
+  width: 100%;
+  padding: 1rem 0;
 }
 
 @media (max-width: 767px) {
-  input.required.email {
-    width: 240px;
+  .subscribe-form {
+    flex-basis: 100%;
   }
 }
 
@@ -396,12 +420,11 @@ input.required.email:focus {
 }
 
 form #mc_embed_signup_scroll input.button {
-  background-image: url(http://nectyre.com/img/rightarrow.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 20px;
   cursor: pointer;
-  padding: 0;
+  font-family: "hk-grotesk", sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 form #mc_embed_signup_scroll input.button:focus {
@@ -490,7 +513,7 @@ form #mc_embed_signup_scroll input.button:focus {
 
 .feature-left img {
   object-fit: cover;
-  min-width: 100%;
+  max-width: 100%;
   min-height: 100%
 }
 
@@ -555,7 +578,7 @@ hr.feature-right-border {
   margin-top: auto;
   margin-bottom: 0;
   border-top: none;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #dddddd;
 }
 
 @media (max-width: 767px) {
@@ -565,9 +588,9 @@ hr.feature-right-border {
 }
 
 h1.home-article-header a {
-  font-family: "Chronicle Display A", "Chronicle Display B",sans-serif;
+  font-family: "Nantes", sans-serif;
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 3.75rem;
   color: #262626;
   text-decoration: none;
@@ -583,10 +606,10 @@ h1.home-article-header a {
 }
 
 h2.home-article-subheader {
-  font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.75rem;
+  font-family: "Nantes", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
   color: #262626;
   margin: 32px 0;
   padding: 0px 40px;
@@ -634,7 +657,7 @@ a.latest-story-link:hover {
 }
 
 h3.about-company {
-  font-family: "hk-grotesk", sans-serif;
+  font-family: "Nantes", serif;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 2.75rem;
@@ -660,10 +683,10 @@ h3.about-company {
 }
 
 h2.home-article-subheader-mobile {
-  font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.75rem;
+  font-family: "Nantes", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
   color: #262626;
   margin: 0 0 40px 0;
 }
@@ -684,7 +707,7 @@ a.latest-story-link-mobile {
 hr.feature-right-border-mobile {
   width: 100%;
   border-top: none;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #dddddd;
   margin: 0;
 }
 }
@@ -734,9 +757,9 @@ p.category-tag {
 }
 
 h1.article-header {
-  font-family: "Chronicle Display A", "Chronicle Display B",sans-serif;
+  font-family: "Nantes", sans-serif;
   font-size: 3.75rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 4rem;
   margin: 0 0 24px 0;
 }
@@ -749,17 +772,17 @@ h1.article-header {
 }
 
 h2.article-subheader {
-  font-family: "Chronicle SSm A", "Chronicle SSm B",serif;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.75rem;
+  font-family: "Nantes", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
   margin: 0 0 24px 0;
 }
 
 @media (max-width: 767px) {
   h2.article-subheader {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -800,14 +823,14 @@ h3.article-date {
 }
 
 span.parheader {
-  font-family: "hk-grotesk",sans-serif;
-  font-size: 1.125rem;
+  font-family: "Nantes",serif;
+  font-size: 1.25rem;
   font-weight: 700;
   margin: 0 4px 0 0;
 }
 
 p.largertext {
-  font-family: "hk-grotesk",sans-serif;
+  font-family: "Nantes",serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
@@ -819,7 +842,7 @@ p.caption {
   font-weight: 500;
   color: #999;
   margin: 0 0 40px 0;
-  line-height: 0.75rem;
+  line-height: 1rem;
   padding: 0;
   text-transform: uppercase;
 }
@@ -844,6 +867,7 @@ a.articlelink {
 a.articlelink:hover {
   color: #262626;
   text-decoration: none;
+  border-bottom: 2px solid #262626;
 }
 
 .share {
@@ -979,9 +1003,9 @@ a.sharelink:hover {
 }
 
 p.card-title {
-  font-family: "Chronicle Display A", "Chronicle Display B",sans-serif;
+  font-family: "Nantes", sans-serif;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 2.25rem;
   color: #FFFFFF;
   margin: 8px 0 0 0;
