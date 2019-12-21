@@ -2,38 +2,20 @@
 
 @font-face {
       font-family: hk-grotesk;
-      src: url("../fonts/hkg-m.woff2") format('woff2'),
-           url("../fonts/hkg-m.woff") format('woff'),
-           url("../fonts/hkg-m.ttf") format('truetype');
-      font-weight: 500;
+      src: url("../fonts/hk-r.woff2") format('woff2'),
+           url("../fonts/hk-r.woff") format('woff'),
+           url("../fonts/hk-r.ttf") format('truetype');
+      font-weight: 400;
       font-style: normal;
     }
 
 @font-face {
       font-family: hk-grotesk;
-      src: url("../fonts/hk-mi.woff2") format('woff2'),
-           url("../fonts/hk-mi.woff") format('woff'),
-           url("../fonts/hk-mi.ttf") format('truetype');
-      font-weight: 500;
-      font-style: italic;
-    }
-
-@font-face {
-      font-family: hk-grotesk;
-      src: url("../fonts/hkg-b.woff2") format('woff2'),
-           url("../fonts/hkg-b.woff") format('woff'),
-           url("../fonts/hkg-b.ttf") format('truetype');
-      font-weight: 700;
+      src: url("../fonts/hk-sb.woff2") format('woff2'),
+           url("../fonts/hk-sb.woff") format('woff'),
+           url("../fonts/hk-sb.ttf") format('truetype');
+      font-weight: 600;
       font-style: normal;
-    }
-
-@font-face {
-      font-family: hk-grotesk;
-      src: url("../fonts/hkg-bi.woff2") format('woff2'),
-           url("../fonts/hkg-bi.woff") format('woff'),
-           url("../fonts/hkg-bi.ttf") format('truetype');
-      font-weight: 700;
-      font-style: italic;
     }
 
 @font-face {
@@ -57,7 +39,7 @@
 /* BASICS *******************************************************************************************************/
 
 body {
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   margin: 0;
 }
 
@@ -80,26 +62,47 @@ body {
 }
 
 p {
-  font-family: "Nantes",serif;
-  font-size: 1.25rem;
+  font-family: "hk-grotesk", sans-serif;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 2rem;
-  color: #262626;
+  line-height: 1.625rem;
+  color: #111111;
   margin: 0 0 40px 0;
+}
+
+b {
+  font-weight: 600;
 }
 
 h1, h2, h3 {
   margin: 0;
 }
 
+h1 {
+  font-family: "Nantes",serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 4rem;
+}
+
+h2 {
+  font-family: "Nantes",serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 ::selection {
   color: #FFFFFF;
-  background: #262626;
+  background: #111111;
 }
 
 ::-moz-selection {
   color: #FFFFFF;
-  background: #262626;
+  background: #111111;
 }
 
 /* NAVIGATION *******************************************************************************************************/
@@ -138,26 +141,62 @@ ul.nav-left {
 ul.nav-left a{
   font-family: "hk-grotesk",sans-serif;
   text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #262626;
+  font-size: 0.875rem;;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #111111;
   text-decoration: none;
   padding-bottom: 4px;
+  position: relative;
+  display: inline;
 }
 
-ul.nav-left a:hover{
-  color: #262626;
-  border-bottom: 1px solid #262626;
+ul.nav-left a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
+}
+
+ul.nav-left a:hover {
+  color: #111111;
+}
+
+ul.nav-left a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 ul.nav-left.white a {
   color: #FFFFFF;
 }
 
-ul.nav-left.white a:hover{
+ul.nav-left.white a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
+}
+
+ul.nav-left.white a:hover {
   color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+}
+
+ul.nav-left.white a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 ul.nav-left span + span {
@@ -200,30 +239,66 @@ ul.nav-right {
 ul.nav-right a{
   font-family: "hk-grotesk",sans-serif;
   text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #262626;
+  font-size: 0.875rem;;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #111111;
   text-decoration: none;
   padding-bottom: 4px;
+  position: relative;
+  display: inline;
 }
 
-ul.nav-right a:hover{
-  color: #262626;
-  border-bottom: 1px solid #262626;
+ul.nav-right a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
+}
+
+ul.nav-right a:hover {
+  color: #111111;
+}
+
+ul.nav-right a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 ul.nav-right.active a {
-  border-bottom: 1px solid #262626;
+  border-bottom: 1px solid #111111;
 }
 
 ul.nav-right.white a {
   color: #FFFFFF;
 }
 
-ul.nav-right.white a:hover{
+ul.nav-right.white a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
+}
+
+ul.nav-right.white a:hover {
   color: #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+}
+
+ul.nav-right.white a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 ul.nav-right span + span {
@@ -283,11 +358,11 @@ ul.overlay-list li {
 }
 
 ul.overlay-list li a {
-  font-family: "hk-grotesk", sans-serif;
-  font-weight: 500;
+  font-family: "Nantes", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.5rem;
-  color: #262626;
+  color: #111111;
   text-decoration: none;
 }
 
@@ -350,9 +425,9 @@ ul.overlay-list li a {
   flex-basis: 50%;
   font-family: "Nantes", serif;
   font-size: 1.75rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2.25rem;
-  color: #262626;
+  color: #111111;
   margin: 0 80px 0 0;
 }
 
@@ -369,12 +444,6 @@ ul.overlay-list li a {
   flex-basis: 50%;
   height: 56px;
   box-sizing: border-box;
-  border-bottom: 1px solid #262626;
-}
-
-.subscribe-form:hover {
-  border-bottom: 2px solid #262626;
-  transition: bordeer-bottom 200ms ease;
 }
 
 form #mc_embed_signup_scroll {
@@ -390,12 +459,44 @@ input {
 
 input.required.email {
   font-family: "Nantes", serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.25rem;
-  color: #262626;
+  line-height: 1.75rem;
   width: 100%;
   padding: 1rem 0;
+  border-bottom: 1px solid #767676;
+}
+
+input.required.email:focus {
+  border-bottom-color: #111111;
+  transition: border-bottom-color 0.5s ease;
+}
+
+input.required.email::-webkit-input-placeholder {
+  color: #767676;
+}
+
+input.required.email::-ms-input-placeholder {
+  color: #767676;
+}
+
+input.required.email::-moz-input-placeholder {
+  color: #767676;
+}
+
+input.required.email:focus::-webkit-input-placeholder {
+  color: #111111;
+  transition: color 0.5s ease;
+}
+
+input.required.email:focus::-ms-input-placeholder {
+  color: #111111;
+  transition: color 0.5s ease;
+}
+
+input.required.email:focus::-moz-input-placeholder {
+  color: #111111;
+  transition: color 0.5s ease;
 }
 
 @media (max-width: 767px) {
@@ -408,23 +509,12 @@ input.required.email:focus {
   outline: none;
 }
 
-::-webkit-input-placeholder { /* Chrome */
-  color: #999999;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #999999;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #999999;
-  opacity: 1;
-}
-
 form #mc_embed_signup_scroll input.button {
   cursor: pointer;
   font-family: "hk-grotesk", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 form #mc_embed_signup_scroll input.button:focus {
@@ -450,10 +540,23 @@ form #mc_embed_signup_scroll input.button:focus {
 .disclaimer {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.125rem;
-  color: #999999;
+  color: #767676;
   margin: 0;
+}
+
+a.terms {
+  color: #767676;
+  text-decoration: none;
+  border-bottom: 1px;
+  border-bottom: 1px solid #767676;
+}
+
+a.terms:hover {
+  color: #111111;
+  border-bottom: 1px solid #111111;
+  transition: all 0.5s ease;
 }
 
 .socials span + span {
@@ -462,17 +565,37 @@ form #mc_embed_signup_scroll input.button:focus {
 
 .socials a {
   font-family: "hk-grotesk",sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: #262626;
-  letter-spacing: 2px;
+  font-size: 0.875rem;;
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 0 4px 0;
+  position: relative;
+  display: inline;
+}
+
+.socials a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
 }
 
 .socials a:hover {
-  border-bottom: 1px solid #262626;
+  color: #111111;
+}
+
+.socials a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 @media (max-width: 767px) {
@@ -563,8 +686,7 @@ form #mc_embed_signup_scroll input.button:focus {
 
 p.category-tag.dark {
   color: #FFFFFF;
-  background-color: #262626;
-  margin: 0 0 40px 0;
+  background-color: #111111;
 }
 
 @media (max-width: 767px) {
@@ -587,12 +709,16 @@ hr.feature-right-border {
   }
 }
 
+h1.home-article-header {
+  margin: 0;
+}
+
 h1.home-article-header a {
   font-family: "Nantes", sans-serif;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 3.75rem;
-  color: #262626;
+  color: #111111;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -606,11 +732,11 @@ h1.home-article-header a {
 }
 
 h2.home-article-subheader {
-  font-family: "Nantes", serif;
-  font-size: 1.5rem;
+  font-family: "hk-grotesk", sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2rem;
-  color: #262626;
+  line-height: 1.75rem;
+  color: #111111;
   margin: 32px 0;
   padding: 0px 40px;
 }
@@ -624,17 +750,37 @@ h2.home-article-subheader {
 a.latest-story-link {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.875rem;
   text-transform: uppercase;
-  color: #262626;
+  color: #111111;
   text-decoration: none;
-  letter-spacing: 2px;
-  padding-bottom: 2px;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+  position: relative;
+  display: inline;
+}
+
+a.latest-story-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
 }
 
 a.latest-story-link:hover {
-  border-bottom: 1px solid #262626;
+  color: #111111;
+}
+
+a.latest-story-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 @media (max-width: 767px) {
@@ -665,7 +811,7 @@ h3.about-company {
   margin: 0;
   padding: 0;
   max-width: 1200px;
-  color: #262626;
+  color: #111111;
 }
 
 .latest-story-mobile {
@@ -684,23 +830,23 @@ h3.about-company {
 }
 
 h2.home-article-subheader-mobile {
-  font-family: "Nantes", serif;
-  font-size: 1.5rem;
+  font-family: "hk-grotesk", sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2rem;
-  color: #262626;
+  line-height: 1.75rem;
+  color: #111111;
   margin: 0 0 40px 0;
 }
 
 a.latest-story-link-mobile {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.875rem;
   text-transform: uppercase;
-  color: #262626;
+  color: #111111;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0 0 40px 0;
   padding: 0;
 }
@@ -719,7 +865,7 @@ hr.feature-right-border-mobile {
   display: flex;
   width: 100%;
   text-align: center;
-  background-color: #262626;
+  background-color: #111111;
   justify-content: center;
   overflow: hidden;
 }
@@ -745,22 +891,22 @@ hr.feature-right-border-mobile {
 
 p.category-tag {
   font-family: "hk-grotesk",sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #262626;
+  letter-spacing: 1px;
+  color: #111111;
   background-color: #FFFFFF;
   margin: 0 0 24px 0;
-  padding: 8px 8px 4px 8px;
+  padding: 8px;
   display: inline-block;
 }
 
 h1.article-header {
   font-family: "Nantes", sans-serif;
   font-size: 3.75rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 4rem;
   margin: 0 0 24px 0;
 }
@@ -773,25 +919,25 @@ h1.article-header {
 }
 
 h2.article-subheader {
-  font-family: "Nantes", serif;
-  font-size: 1.5rem;
+  font-family: "hk-grotesk", sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.75rem;
   margin: 0 0 24px 0;
 }
 
 @media (max-width: 767px) {
   h2.article-subheader {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 
 h3.article-date {
   font-family: "hk-grotesk",sans-serif;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-weight: 400;
+  letter-spacing: 1px;
   font-size: 0.875rem;
   line-height: 1.125rem;
   padding: 0;
@@ -823,13 +969,6 @@ h3.article-date {
   }
 }
 
-p.parheader {
-  font-family: "Nantes",serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
-
 p.largertext {
   font-family: "Nantes",serif;
   font-size: 1.5rem;
@@ -839,8 +978,8 @@ p.largertext {
 
 p.caption {
   font-family: "hk-grotesk",sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.875rem;;
+  font-weight: 400;
   color: #999;
   margin: 0 0 40px 0;
   line-height: 1rem;
@@ -855,20 +994,37 @@ p.caption a{
 
 p.caption a:hover {
   text-decoration: none;
-  color: #262626;
+  color: #111111;
 }
 
 a.articlelink {
-  color: #262626;
+  position: relative;
+  display: inline;
+  color: #111111;
   text-decoration:none;
   padding-bottom: 2px;
-  border-bottom: 1px solid #262626;
+}
+
+a.articlelink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom left;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
 }
 
 a.articlelink:hover {
-  color: #262626;
-  text-decoration: none;
-  border-bottom: 2px solid #262626;
+  color: #111111;
+}
+
+a.articlelink:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
 
 .share {
@@ -895,11 +1051,9 @@ a.articlelink:hover {
 p.sharetitle {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;
-  font-weight: 700;
-  color: #262626;
+  font-weight: 400;
+  color: #111111;
   line-height: 0.875rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -908,18 +1062,37 @@ p.sharetitle {
 a.sharelink {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;
-  font-weight: 500;
-  color: #262626;
+  font-weight: 600;
+  color: #111111;
   margin: 0;
   padding: 0 0 4px 0;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
+  position: relative;
+  display: inline;
+}
+
+a.sharelink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom center;
+  transition: transform 0.9s cubic-bezier(.19,1,.22,1);
 }
 
 a.sharelink:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #262626;
+  color: #111111;
+}
+
+a.sharelink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
 
 /* STORIES INDEX *******************************************************************************************************/
@@ -991,6 +1164,11 @@ a.sharelink:hover {
   background-color: rgba(0,0,0,0.25);
 }
 
+.card-overlay:hover {
+  background-color: rgba(0,0,0,0.75);
+  transition: all 0.5s ease;
+}
+
 .card-text{
   position: absolute;
   padding: 40px;
@@ -1006,7 +1184,7 @@ a.sharelink:hover {
 p.card-title {
   font-family: "Nantes", sans-serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 2.25rem;
   color: #FFFFFF;
   margin: 8px 0 0 0;
