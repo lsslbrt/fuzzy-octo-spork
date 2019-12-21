@@ -143,7 +143,7 @@ ul.nav-left a{
   text-transform: uppercase;
   font-size: 0.875rem;;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #111111;
   text-decoration: none;
   padding-bottom: 4px;
@@ -241,7 +241,7 @@ ul.nav-right a{
   text-transform: uppercase;
   font-size: 0.875rem;;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #111111;
   text-decoration: none;
   padding-bottom: 4px;
@@ -568,7 +568,7 @@ a.terms:hover {
   font-size: 0.875rem;;
   font-weight: 600;
   color: #111111;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 0 4px 0;
@@ -755,7 +755,7 @@ a.latest-story-link {
   text-transform: uppercase;
   color: #111111;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   padding-bottom: 4px;
   position: relative;
   display: inline;
@@ -846,7 +846,7 @@ a.latest-story-link-mobile {
   text-transform: uppercase;
   color: #111111;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin: 0 0 40px 0;
   padding: 0;
 }
@@ -895,7 +895,7 @@ p.category-tag {
   font-size: 1rem;
   line-height: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #111111;
   background-color: #FFFFFF;
   margin: 0 0 24px 0;
@@ -937,7 +937,7 @@ h3.article-date {
   font-family: "hk-grotesk",sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 0.875rem;
   line-height: 1.125rem;
   padding: 0;
@@ -982,7 +982,7 @@ p.caption {
   font-weight: 400;
   color: #999;
   margin: 0 0 40px 0;
-  line-height: 1rem;
+  line-height: 1.25rem;
   padding: 0;
   text-transform: uppercase;
 }
@@ -1067,7 +1067,7 @@ a.sharelink {
   margin: 0;
   padding: 0 0 4px 0;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-decoration: none;
   position: relative;
   display: inline;
