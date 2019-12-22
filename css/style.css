@@ -96,12 +96,12 @@ h2 {
 }
 
 ::selection {
-  color: #FFFFFF;
-  background: #111111;
+  color: #111111;
+  background: #F1E2DA;
 }
 
 ::-moz-selection {
-  color: #FFFFFF;
+  color: #F1E2DA;
   background: #111111;
 }
 
@@ -685,13 +685,13 @@ a.terms:hover {
 }
 
 p.category-tag.dark {
-  color: #FFFFFF;
-  background-color: #111111;
+  color: #111111;
+  border-bottom: 1px solid #111111;
 }
 
 @media (max-width: 767px) {
   p.category-tag.dark {
-    margin: 0 0 24px 0;
+    margin: 0 0 32px 0;
   }
 }
 
@@ -896,11 +896,11 @@ p.category-tag {
   line-height: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #111111;
-  background-color: #FFFFFF;
-  margin: 0 0 24px 0;
-  padding: 8px;
+  color: #FFFFFF;
+  margin: 0 0 32px 0;
+  padding: 8px 0px;
   display: inline-block;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 h1.article-header {
@@ -980,7 +980,7 @@ p.caption {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;;
   font-weight: 400;
-  color: #999;
+  color: #767676;
   margin: 0 0 40px 0;
   line-height: 1.25rem;
   padding: 0;
@@ -988,7 +988,7 @@ p.caption {
 }
 
 p.caption a{
-  color: #999;
+  color: #767676;
   text-decoration: none;
 }
 
@@ -1051,12 +1051,14 @@ a.articlelink:hover::after {
 p.sharetitle {
   font-family: "hk-grotesk",sans-serif;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
   color: #111111;
   line-height: 0.875rem;
   margin: 0;
   padding: 0;
   display: inline-block;
+  letter-spacing: 2px;
 }
 
 a.sharelink {
@@ -1077,12 +1079,12 @@ a.sharelink::after {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  transform: scaleX(1);
   height: 1px;
   bottom: 0;
   left: 0;
   background-color: #111111;
-  transform-origin: bottom center;
+  transform-origin: bottom left;
   transition: transform 0.9s cubic-bezier(.19,1,.22,1);
 }
 
@@ -1091,8 +1093,8 @@ a.sharelink:hover {
 }
 
 a.sharelink:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom center;
+  transform: scaleX(0);
+  transform-origin: bottom right;
 }
 
 /* STORIES INDEX *******************************************************************************************************/
