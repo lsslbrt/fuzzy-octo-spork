@@ -700,7 +700,7 @@ hr.feature-right-border {
   margin-top: auto;
   margin-bottom: 0;
   border-top: none;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: none;
 }
 
 @media (max-width: 767px) {
