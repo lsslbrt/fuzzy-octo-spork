@@ -657,7 +657,7 @@ a.terms:hover {
 .feature-left img {
   object-fit: cover;
   max-width: 100%;
-  min-height: 768px;
+  min-height: 100%;
   padding: 100px 140px;
   background-color: #f3f1e6;
 }
@@ -1172,7 +1172,7 @@ a.sharelink:hover::after {
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    grid-auto-rows: 527px;
+    grid-auto-rows: 577px;
     justify-content: center;
     margin: 80px 0 0 0;
     padding: 40px;
@@ -1185,7 +1185,7 @@ a.sharelink:hover::after {
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
-    grid-auto-rows: 527px;
+    grid-auto-rows: 577px;
     justify-content: center;
     margin: 80px 0 0 0;
     padding: 40px;
@@ -1210,7 +1210,7 @@ a.sharelink:hover::after {
 .card-image img {
   object-fit: cover;
   width: 100%;
-  height: 400px;
+  height: 450px;
   display: flex;
 }
 
